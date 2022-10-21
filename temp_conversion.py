@@ -38,3 +38,17 @@ def hotter_temp():
     # Print out the hotter temp: '30.2 degrees celsius' or '85.1 degrees fahrenheit', respectively
     print('30.2 degrees celsius')
 hotter_temp()
+
+def convert_to_celsius(num):
+    print((num - 32) * 5/9)
+
+def convert_to_farenheit(num):
+    print((num * 9/5) + 32)
+
+def temperature_converter(num, degrees):
+    if degrees == 'farenheit':
+        convert_to_celsius(num)
+    elif degrees == 'celsius':
+        convert_to_farenheit(num)
+
+temperature_converter(32, 'celsius')
